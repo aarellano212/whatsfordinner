@@ -54,10 +54,10 @@ module.exports.deleteRestaurant = async function(req, res) {
     await Restaurant.destroy(
         {
             where:
-                {
-                    id: req.params.id
-                }
-});
+            {
+                id: req.params.id
+            }
+    });
     res.redirect('/')
 }
 
